@@ -1,7 +1,7 @@
 package com.kakao.tech.chat.controller
 
 import com.kakao.tech.chat.domain.travel.TravelChatService
-import org.springframework.web.bind.annotation.PostMapping
+import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
@@ -12,12 +12,12 @@ import reactor.core.publisher.Flux
 class TravelChatController(
     private val travelChatService: TravelChatService
 ) {
-    @PostMapping
+    @GetMapping
     fun chat(@RequestParam("q") query: String): String {
         return travelChatService.chat(query)
     }
 
-    @PostMapping("/stream")
+    @GetMapping("/stream")
     fun chatStream(@RequestParam("q") query: String): Flux<String> {
         return travelChatService.chatStream(query)
     }
