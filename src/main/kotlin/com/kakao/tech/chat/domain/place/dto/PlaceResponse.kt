@@ -1,4 +1,4 @@
-package com.kakao.tech.chunsik_travel.domain.place.dto
+package com.kakao.tech.chat.domain.place.dto
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.annotation.JsonProperty

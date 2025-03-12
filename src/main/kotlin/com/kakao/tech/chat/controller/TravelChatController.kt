@@ -1,6 +1,6 @@
-package com.kakao.tech.chunsik_travel.controller
+package com.kakao.tech.chat.controller
 
-import com.kakao.tech.chunsik_travel.domain.travel.TravelChatService
+import com.kakao.tech.chat.domain.travel.TravelChatService
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam

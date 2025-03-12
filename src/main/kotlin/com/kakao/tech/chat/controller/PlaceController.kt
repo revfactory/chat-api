@@ -1,7 +1,7 @@
-package com.kakao.tech.chunsik_travel.controller
+package com.kakao.tech.chat.controller
 
-import com.kakao.tech.chunsik_travel.domain.place.PlaceService
-import com.kakao.tech.chunsik_travel.domain.place.dto.PlaceResponse
+import com.kakao.tech.chat.domain.place.PlaceService
+import com.kakao.tech.chat.domain.place.dto.PlaceResponse
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam

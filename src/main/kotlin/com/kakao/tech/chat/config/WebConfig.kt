@@ -1,4 +1,4 @@
-package com.kakao.tech.chunsik_travel.config
+package com.kakao.tech.chat.config
 
 import jakarta.servlet.MultipartConfigElement
 import org.springframework.boot.web.servlet.MultipartConfigFactory

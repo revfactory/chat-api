@@ -1,4 +1,4 @@
-package com.kakao.tech.chunsik_travel.domain.travel
+package com.kakao.tech.chat.domain.travel
 
 import org.springframework.ai.chat.client.ChatClient
 import org.springframework.stereotype.Service

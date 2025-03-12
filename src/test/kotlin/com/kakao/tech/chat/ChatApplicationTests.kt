@@ -1,10 +1,10 @@
-package com.kakao.tech.chunsik_travel
+package com.kakao.tech.chat
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
-class ChunsikTravelApplicationTests {
+class ChatApplicationTests {
 
 	@Test
 	fun contextLoads() {

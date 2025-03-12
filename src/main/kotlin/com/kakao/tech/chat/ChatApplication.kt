@@ -1,11 +1,11 @@
-package com.kakao.tech.chunsik_travel
+package com.kakao.tech.chat
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class ChunsikTravelApplication
+class ChatApplication
 
 fun main(args: Array<String>) {
-	runApplication<ChunsikTravelApplication>(*args)
+	runApplication<ChatApplication>(*args)
 }

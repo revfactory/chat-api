@@ -1,4 +1,4 @@
-package com.kakao.tech.chunsik_travel.config
+package com.kakao.tech.chat.config
 
 import org.springframework.ai.chat.client.ChatClient
 import org.springframework.ai.chat.prompt.ChatOptions

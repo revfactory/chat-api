@@ -1,6 +1,6 @@
-package com.kakao.tech.chunsik_travel.domain.place
+package com.kakao.tech.chat.domain.place
 
-import com.kakao.tech.chunsik_travel.domain.place.dto.PlaceResponse
+import com.kakao.tech.chat.domain.place.dto.PlaceResponse
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.http.HttpHeaders
 import org.springframework.stereotype.Service

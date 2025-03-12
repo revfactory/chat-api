@@ -1,1 +1,1 @@
-rootProject.name = "chunsik-travel"
+rootProject.name = "chat-api"
