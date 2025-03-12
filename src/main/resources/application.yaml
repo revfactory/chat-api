@@ -1,1 +1,9 @@
-spring.application.name=chunsik-travel
+spring:
+  application.name: chunsik-travel
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+
+place:
+  url: 'https://dapi.kakao.com/v2/local/search/keyword.json'
+  apiKey: ${PLACE_API_KEY}
