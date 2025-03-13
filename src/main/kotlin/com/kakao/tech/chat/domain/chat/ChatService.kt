@@ -1,6 +1,7 @@
 package com.kakao.tech.chat.domain.chat
 
 import com.kakao.tech.chat.controller.dto.ChatResponse
+import com.kakao.tech.chat.domain.chat.tools.DateTimeTools
 import org.springframework.ai.chat.client.ChatClient
 import org.springframework.ai.chat.messages.Message
 import org.springframework.stereotype.Service
@@ -12,6 +13,7 @@ class ChatService(
     fun chat(messages: List<Message>): ChatResponse {
         val response = chatClient.prompt()
             .messages(messages)
+            .tools(DateTimeTools())
             .call()
             .content()!!
         return ChatResponse("message", "assistant", response)
