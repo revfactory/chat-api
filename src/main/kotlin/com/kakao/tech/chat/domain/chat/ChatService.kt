@@ -1,18 +1,19 @@
 package com.kakao.tech.chat.domain.chat
 
+import com.kakao.tech.chat.controller.dto.ChatResponse
 import org.springframework.ai.chat.client.ChatClient
+import org.springframework.ai.chat.messages.Message
 import org.springframework.stereotype.Service
-import reactor.core.publisher.Flux
 
 @Service
 class ChatService(
     private val chatClient: ChatClient
 ) {
-    fun chat(query: String): String {
-        return "hello, $query!"
-    }
+    fun chat(messages: List<Message>): ChatResponse {
+        val response = "Hello!"
 
-    fun chatStream(query: String): Flux<String> {
-        return Flux.just("hello, $query!")
+        // TODO
+
+        return ChatResponse("message", "assistant", response)
     }
 }
