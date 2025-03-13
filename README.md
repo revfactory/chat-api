@@ -10,17 +10,26 @@ git clone https://github.com/revfactory/chat-api.git
 cd chat-api
 ```
 
-### 2️⃣ 환경 변수 설정 (아래 방법들중 하나 선택)
+### 2️⃣ 환경 변수 설정 (아래 방법들 중 하나 선택)
+
 - IDE를 사용하는 경우 IDE 설정을 통해 환경 변수를 설정할 수 있습니다.
 
   <img width="290" alt="Image" src="https://github.com/user-attachments/assets/7d1dfc24-8f77-476f-a86e-e3de474ffa93" />
-  Edit Configurations... 선택
+
+  **Edit Configurations... 선택**
+
   <img width="788" alt="Image" src="https://github.com/user-attachments/assets/63ccf615-cd3f-4a1e-9d9e-a35b47134aa9" />
-  Modify Options 선택
+
+  **Modify Options 선택**
+
   <img width="1066" alt="Image" src="https://github.com/user-attachments/assets/c8bb1a72-ea7a-43db-a186-a55099f9e1a9" />
-  Environment Variables 선택
+
+  **Environment Variables 선택**
+
   <img width="791" alt="Image" src="https://github.com/user-attachments/assets/74d5897f-530b-4f2b-a4fc-2fcc3973e0e2" />
-  Environment Variables 에 입력 (예: OPENAI_API_KEY=your_openai_api_key;PLACE_API_KEY=your_place_api_key)
+
+  **Environment Variables 에 입력** (예: `OPENAI_API_KEY=your_openai_api_key;PLACE_API_KEY=your_place_api_key`)
+
 
 - 리눅스/macOS 환경에서는 다음과 같이 설정할 수도 있습니다.
 ```bash
