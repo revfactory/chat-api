@@ -10,10 +10,10 @@ class ChatService(
     private val chatClient: ChatClient
 ) {
     fun chat(messages: List<Message>): ChatResponse {
-        val response = "Hello!"
-
-        // TODO
-
+        val response = chatClient.prompt()
+            .messages(messages)
+            .call()
+            .content()!!
         return ChatResponse("message", "assistant", response)
     }
 }
