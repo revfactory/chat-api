@@ -18,7 +18,7 @@ repositories {
 	mavenCentral()
 }
 
-extra["springAiVersion"] = "1.0.0-M6"
+extra["springAiVersion"] = "1.0.0-M7"
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
@@ -29,7 +29,8 @@ dependencies {
 	implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-	implementation("org.springframework.ai:spring-ai-openai-spring-boot-starter")
+	implementation("org.springframework.ai:spring-ai-starter-mcp-client-webflux")
+	implementation("org.springframework.ai:spring-ai-starter-model-openai")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("io.projectreactor:reactor-test")

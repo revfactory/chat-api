@@ -3,7 +3,30 @@ spring:
   ai:
     openai:
       api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4o-2024-11-20
 
-place:
-  url: 'https://dapi.kakao.com/v2/local/search/keyword.json'
-  apiKey: ${PLACE_API_KEY}
+    mcp:
+      client:
+        sse:
+          connections:
+            member-server:
+              url: http://localhost:8081
+
+        stdio:
+          connections:
+            brave-search:
+              command: npx
+              args:
+                - "-y"
+                - "@modelcontextprotocol/server-brave-search"
+              env:
+                BRAVE_API_KEY: ${BRAVE_API_KEY}
+
+            filesystem:
+              command: npx
+              args:
+                - "-y"
+                - "@modelcontextprotocol/server-filesystem"
+                - "./"

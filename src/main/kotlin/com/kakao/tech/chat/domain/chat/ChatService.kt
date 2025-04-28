@@ -10,9 +10,11 @@ class ChatService(
     private val chatClient: ChatClient
 ) {
     fun chat(messages: List<Message>): ChatResponse {
-        val response = "Hello!"
-
-        // TODO
+        val response = chatClient.prompt()
+            .system("오늘 날짜는 2025년 4월 24일입니다.")
+            .messages(messages)
+            .call()
+            .content()!!
 
         return ChatResponse("message", "assistant", response)
     }
